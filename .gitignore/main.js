@@ -37,4 +37,14 @@ bot.on('message', message => {
         console.log('Commande /ping demandée ! Pong !');
     }
 
+    if (message.content === prefix + "stats"){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#0FFFE7')
+            .setTitle('Stats : ${message.author.username}')
+            .addField("test", "test")
+            .setFooter("BattleSky by Xari0x", "https://cdn.discordapp.com/avatars/282147518958272512/4746c6bc75b7de27df5990a4fb70ec1c.png")
+        message.channel.sendEmbed(help_embed);
+        console.log('Commande /ping demandée ! Pong !');
+    }
+
 });
