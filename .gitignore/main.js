@@ -10,7 +10,7 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login('MzU0OTg2MjQwNDc2NDQ2NzIx.DRbmHg.HEuanQT8kjVE8pQbuUL7MeHDbwI');
+bot.login('MzU0OTg2MjQwNDc2NDQ2NzIx.DRcVqw.vxnASU8HQNyalO2XFzWzVda0PNQ');
 
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "☃️ Visiteur ☃️");
