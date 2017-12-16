@@ -20,7 +20,7 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
             .setColor('#CC00DB')
-            .addField("Général", "    - /help : Affiche les commandes du bot !")
+            .addField("Général", "    - /help : Affiche les commandes du bot !", true)
             .addField("Interaction", "    - /ping : Le bot répond pong !")
             .setFooter("BattleSky by Xari0x", "https://cdn.discordapp.com/avatars/282147518958272512/4746c6bc75b7de27df5990a4fb70ec1c.png")
             .setThumbnail("https://cdn.discordapp.com/avatars/354986240476446721/954bbdcc03988600ad8fae6226c3726a.png")
@@ -39,8 +39,8 @@ bot.on('message', message => {
 
     if (message.content === prefix + "stats"){
         var stats_embed = new Discord.RichEmbed()
-            .setTitle('Stats test2 : ${message.author.username}')
-            .addField("test")
+            .addField("Utilisateur", "${message.author.username}", true)
+            .addField("UserID", msgauthor)
 
         message.author.send({embed: stats_embed});
     }
