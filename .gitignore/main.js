@@ -29,21 +29,21 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "ping"){
-        var help_embed = new Discord.RichEmbed()
+        var ping_embed = new Discord.RichEmbed()
             .setColor('#07DB00')
             .addField("Ping", "Pong !")
             .setFooter("BattleSky by Xari0x", "https://cdn.discordapp.com/avatars/282147518958272512/4746c6bc75b7de27df5990a4fb70ec1c.png")
-        message.channel.sendEmbed(help_embed);
+        message.channel.sendEmbed(ping_embed);
         console.log('Commande /ping demandée ! Pong !');
     }
 
     if (message.content === prefix + "stats"){
-        var help_embed = new Discord.RichEmbed()
+        var stats_embed = new Discord.RichEmbed()
             .setColor('#0FFFE7')
             .setTitle('Stats : ${message.author.username}')
-            .addField("test", "test")
+            .addField("User ID", msgauthor)
             .setFooter("BattleSky by Xari0x", "https://cdn.discordapp.com/avatars/282147518958272512/4746c6bc75b7de27df5990a4fb70ec1c.png")
-        message.channel.sendEmbed(help_embed);
+        message.channel.sendEmbed(stats_embed);
         console.log('Commande /ping demandée ! Pong !');
     }
 
