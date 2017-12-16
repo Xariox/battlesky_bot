@@ -42,7 +42,7 @@ bot.on('message', message => {
             .setTitle('Stats Utilisateur : ${message.author.username}')
             .addField("UserID")
 
-        message.author.send({embed: ping_embed});
+        message.author.send({embed: stats_embed});
     }
 
 });
