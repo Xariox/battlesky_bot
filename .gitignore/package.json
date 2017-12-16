@@ -1,0 +1,16 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "BattleSky",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "node-internet-radio": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xari0x",
+  "license": "ISC"
+}
