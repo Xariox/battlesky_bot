@@ -1,3 +1,5 @@
+import { MessageEmbedAuthor } from 'discord.js';
+
 const Discord = require('discord.js');
 
 var bot = new Discord.Client();
@@ -41,7 +43,7 @@ bot.on('message', message => {
         var stats_embed = new Discord.RichEmbed()
             .setColor('#0FFFE7')
             .setTitle('Stats : ${message.author.username}')
-            .addField("User ID", msgauthor)
+            .addField("User ID", MessageEmbedAuthor)
             .setFooter("BattleSky by Xari0x", "https://cdn.discordapp.com/avatars/282147518958272512/4746c6bc75b7de27df5990a4fb70ec1c.png")
         message.channel.sendEmbed(stats_embed);
         console.log('Commande /ping demandée ! Pong !');
