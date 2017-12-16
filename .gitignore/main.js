@@ -39,7 +39,7 @@ bot.on('message', message => {
 
     if (message.content === prefix + "stats"){
         var stats_embed = new Discord.RichEmbed()
-            .setTitle('Stats test : ${message.author.username}')
+            .setTitle('Stats test2 : ${message.author.username}')
             .addField("test")
 
         message.author.send({embed: stats_embed});
