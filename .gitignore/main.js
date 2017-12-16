@@ -37,7 +37,7 @@ bot.on('message', message => {
         console.log('Commande /ping demandée ! Pong !');
     }
 
-    if (message.content === prefix + "ping"){
+    if (message.content === prefix + "stats"){
         var stats_embed = new Discord.RichEmbed()
             .setTitle('Stats Utilisateur : ${message.author.username}')
             .addField("UserID")
